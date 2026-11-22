@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Virtualization in AWS – Hypervisor Visual | Cloud Messenger™</title>
+<meta name="description" content="Interactive visual guide to AWS Nitro, hypervisors and EC2 virtualization.">
+<link rel="icon" href="assets/icons/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="assets/icons/logo.svg" alt="" width="34" height="34"><div><b>Virtualization in AWS</b><small>Hypervisor Visual · Cloud Messenger™</small></div></div>
+  <button id="theme" class="btn" aria-label="Toggle light or dark mode">☀ / ☾</button>
+</header>
+<div class="layout">
+  <aside class="side">
+    <div class="prog"><div id="bar"></div></div>
+    <small id="ptxt"></small>
+    <nav id="steps" aria-label="Learning steps"></nav>
+    <div class="ctl">
+      <button id="prev" class="btn">◀ Prev</button>
+      <button id="next" class="btn">Next ▶</button>
+      <button id="play" class="btn pri">▶ Autoplay</button>
+      <button id="reset" class="btn">↺ Reset</button>
+    </div>
+  </aside>
+  <main>
+    <section class="card"><h2 id="stitle"></h2><div id="scene" class="scene-wrap"></div></section>
+    <section class="cap card" id="cap" aria-live="polite"></section>
+    <section class="card"><h2>Interactive Infrastructure Diagram <small>(click any component)</small></h2><div id="diagram"></div></section>
+    <section class="card"><h2>Streaming Website Preview <small>(the site NGINX serves from EC2)</small></h2><div id="site"></div></section>
+  </main>
+</div>
+<footer class="foot">
+  <p><b>Created by Cloud Messenger™</b> · Learn • Build • Visualize • Troubleshoot • Grow</p>
+  <p><a href="https://cloudmessenger.in/" target="_blank" rel="noopener">Website</a> · <a href="https://www.linkedin.com/in/cloud-messenger" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Cloud-Messenger" target="_blank" rel="noopener">GitHub</a> · #buildwithCloud-Messenger</p>
+  <p>Made with care by Cloud Messenger™</p>
+  <p>© 2026 Cloud Messenger. All rights reserved.</p>
+  <p class="sm">The compilation, structure, layout, educational content and original visual design of this project are the intellectual work of Cloud Messenger. Streaming UI is an original fictional service, not affiliated with any real streaming brand. AWS and Amazon EC2 are trademarks of Amazon.</p>
+</footer>
+<div id="modal" class="modal" hidden><div class="mbox" role="dialog" aria-modal="true"><button id="mclose" class="btn x" aria-label="Close">✕</button><div id="mbody"></div></div></div>
+<script src="js/virtualization.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
